@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Ejemplo Markdown</title>
+		<link rel="stylesheet" href="./dist/reveal.css">
+		<link rel="stylesheet" href="./dist/theme/black.css" id="theme">
+        <link rel="stylesheet" href="./plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+                <!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
+                <section data-markdown data-separator="---" data-separator-vertical="--">
+                    <script type="text/template">
+                        ## Requisitos para poder utilizar Scrum
+                        Los siguientes puntos son de especial importancia para la implantación de una gestión ágil de proyectos como Scrum:
+
+                        ---
+                        ### 1. Cultura de empresa
+                        * El trabajo en equipo y la colaboración.
+                        * Equipos autogestionados.
+                        * La creatividad del equipo.
+                        * La transparencia y la mejora continua.
+                        
+                        --
+                        ### 2. Compromiso del cliente
+                        * Tiene la responsabilidad de dirigir los resultados del producto o proyecto.
+                        * Debe colaborar participando en el inicio y en el fin de cada iteración, y debe estar disponible para resolver dudas.
+                        
+                        --
+                        ### 3. Compromiso de la Dirección
+                        * Será necesario tomar decisiones, realizar cambios, alinear a personas y proporcionar recursos.
+                        --
+                        ### 4. Compromiso del equipo.
+                        * No confían en los demás.
+                        * No son transparentes respecto a su trabajo personal.
+                        * Su modo de relación se basa en la generación de conflicto o bien evitan entrar en conflictos sanos en que ambas partes ganen.
+                        *  Priorizan su ego.
+                        * No son capaces de cambiar sus hábitos y salir de su zona de confort.
+                        * Quieren seguir siendo los héroes que solucionan los proyectos.
+                        --
+                        ### 5.Relación entre proveedor y cliente.
+                        *   En lugar de estar ligados por un contrato férreo, las dos partes asumen que habrá cambios para que el cliente pueda obtener lo que realmente necesita.
+                        * Debe existir transparencia en la ejecución del proyecto para facilitar esta relación.
+                        --
+                        ### 6. Facilidad para realizar cambios en el proyecto.
+                        * Disponer de técnicas y herramientas que faciliten el crecimiento y la introducción de cambios.
+                        * Mantener la simplicidad y calidad interna del producto que se está creando.
+                        --
+                        ### 7. Tamaño del equipo.
+                        --
+                        ### 8. Equipo trabajando en un mismo espacio común.
+                        --
+                        ### 9. Dedicación del equipo a tiempo completo.
+                        * Evitar dañar su productividad.
+                        * Facilitar la gestión de recursos humanos.
+                        --
+                        ### 10. Estabilidad del equipo.
+                        ---
+                        # End Markdown
+                
+                    </script>
+                </section>
+
+              
+
+            </div>
+		</div>
+
+		<script src="./dist/reveal.js"></script>
+        <script src="./plugin/markdown/markdown.js"></script>
+        <script src="./plugin/highlight/highlight.js"></script>
+        <script src="./plugin/notes/notes.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+
+		</script>
+
+	</body>
+</html>
